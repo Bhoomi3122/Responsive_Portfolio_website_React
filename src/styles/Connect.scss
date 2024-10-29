@@ -1,0 +1,60 @@
+@import "./statics.scss";
+
+#connect {
+  padding: 2rem; // Increased padding for a more spacious section
+  text-align: center;
+  // background-color: #f5f5f5; // Light background color to differentiate the section
+
+  h2 {
+    margin-bottom: 2rem; // Spacing below the heading
+    font-size: 2.5rem; // Font size for prominence
+    color: #333; // Dark color for text
+    border-bottom: 2px solid #666565; // Simple underline effect
+    display: inline-block; // Ensures the underline only spans the width of the text
+    margin-top: 40px; // Margin top
+    padding-bottom: 10px; // Padding to ensure space between text and underline
+  }
+
+  .connect-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; // Remove default margin
+
+    display: flex;
+    justify-content: center; // Center items horizontally
+    flex-wrap: wrap; // Allow wrapping to fit different screen sizes
+
+    li {
+      margin: 3rem; // Margin around each icon and text
+      display: flex;
+      flex-direction: column; // Stack icon and text vertically
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem; // Font size for text
+
+      a {
+        color: #000; // Initial color of icons
+        text-decoration: none;
+        display: flex;
+        flex-direction: column; // Stack icon and text vertically
+        align-items: center;
+        transition: color 0.3s;
+
+        .icon {
+          width: 5.5rem; // Larger size for icons
+          height: auto; // Maintain aspect ratio
+          margin-bottom: 0.5rem; // Space between icon and text
+        }
+
+        &:hover {
+          color: $color5; // Change color on hover
+        }
+
+        .label {
+          font-size: 1rem; // Font size for text below icons
+          color: inherit; // Inherit color from the link
+        }
+      }
+    }
+  }
+}

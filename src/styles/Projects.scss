@@ -1,0 +1,253 @@
+@import "./statics.scss";
+
+#project {
+  width: 100%;
+  height: 110vh;
+  padding: 8rem $p;
+  margin-top: -40px;
+
+  > h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    border-bottom: 2px solid #666565;
+    margin-left: 40%;
+    display: inline-block;
+  }
+
+  > section {
+    margin-top: 0.7rem;
+    width: 100%;
+    height: 100%;
+    background-color: $color5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > article {
+      width: 95%;
+      height: 30vmax;
+    }
+
+    .workItem {
+      position: relative;
+      overflow: hidden;
+      height: 30vmax;
+      width: 95%;
+      margin: auto;
+      background-color: $color4;
+      display: flex;
+      padding: 1.5rem;
+      box-shadow: 0 0 20px 5px $color1;
+      border-radius: 15px;
+
+      > img {
+        border-radius: 15px;
+        width: 30%;
+        object-fit: cover;
+      }
+
+      > aside {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 1.5rem;
+
+        .tech-stack {
+          margin-top: 20px;
+          margin-bottom: 15px;
+          font-style: italic;
+        }
+
+        > h3 {
+          font-size: 2rem;
+          font-weight: 700;
+          text-align: left;
+          margin-bottom: 0.2rem;
+          margin-top: 15px;
+        }
+
+        > p.description {
+          line-height: 1.5;
+          text-align: justify;
+          margin-bottom: 0.5rem;
+          font-size: 1.05rem;
+        }
+
+        h4.key-features-heading {
+          font-size: 1.2rem;
+          color: $color5;
+          margin-bottom: 0.5rem;
+          text-transform: uppercase;
+          margin-top: 7px;
+        }
+
+        ul.key-features {
+          list-style-type: disc;
+          margin-left: 1.5rem;
+          font-size: 1rem;
+          text-align: justify;
+
+          li {
+            margin-top: 0.7rem;
+          }
+        }
+
+        a.view-details-btn {
+          background-color: $color3;
+          padding: 0.7rem 2rem;
+          color: $color4;
+          transition: background-color 0.5s;
+          text-decoration: none;
+          border-radius: 5px;
+          margin-top: 1.2rem;
+          align-self: flex-start;
+          font-weight: bold;
+
+          &:hover {
+            background-color: darken($color3, 10%);
+          }
+        }
+      }
+
+      .status-label {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-bottom: 19px;
+        color: #fff;
+
+        &.completed {
+          background-color: green;
+        }
+
+        &.in-progress {
+          background-color: rgb(252, 0, 50);
+        }
+      }
+    }
+  }
+
+  .carousel .control-dots .dot {
+    background-color: $color5;
+    border: 1px solid $color4;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+  }
+
+  .carousel .control-dots .dot:hover {
+    background-color: lighten($color5, 10%);
+  }
+
+  .carousel .control-dots .dot.selected {
+    background-color: $color5;
+  }
+}
+@media (max-width: 768px) {
+  #project {
+    padding: 4rem $p;
+    height: 500px !important;
+
+    > h2 {
+      font-size: 2rem;
+      margin-left: 40%;
+      margin-bottom: 0.4rem;
+    }
+
+    .workItem {
+      flex-direction: column;
+      height: 250px !important;
+      padding: 0.3rem !important;
+
+      > img {
+        display: none; // Hide image on smaller screens
+      }
+
+      > aside {
+        width: 100% !important;
+        padding: 0;
+
+        > h3 {
+          font-size: 1.2rem !important; // Decrease the heading font size
+          margin-top: 0;
+        }
+
+        > p.description {
+          font-size: 1rem !important; // Reduce text size
+          padding-right: 10px;
+          padding-bottom: 10px;
+        }
+
+        .status-label{
+          display: none;
+        }
+
+        // Hide key features section for mobile
+        h4.key-features-heading {
+          display: none; // Hide key features heading
+        }
+
+        ul.key-features {
+          display: none; // Hide key features list
+        }
+
+        a.view-details-btn {
+          margin-top: 0 !important;
+          padding: 0.5rem 1.5rem !important; 
+          font-size: 0.9rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #project {
+    padding: 1rem $p !important;
+
+    > h2 {
+      font-size: 1.2rem !important;
+      margin-left: 15%;
+    }
+
+
+    .workItem {
+      padding: 0.5rem;
+      box-shadow: 0 0 15px 3px $color1;
+
+      > aside {
+        > h3 {
+          font-size: 1rem; // Further decrease the heading font size
+        }
+
+        > p.description {
+          font-size: 0.9rem; // Further reduce text size
+        }
+
+        
+
+        // Ensure key features remain hidden
+        h4.key-features-heading {
+          display: none; // Hide key features heading
+        }
+
+        ul.key-features {
+          display: none; // Hide key features list
+        }
+
+        a.view-details-btn {
+          padding: 0.5rem 1.2rem;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}

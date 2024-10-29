@@ -1,0 +1,298 @@
+@media screen and (max-width: 1400px) {
+    nav {
+        padding: 0 $p_md;
+
+        
+    }
+    .hamburger-btn {
+        display: none !important;
+        border: none;
+        background-color: transparent;
+    }
+
+    #home {
+        height: 100vh;
+
+        >section {
+            &:first-of-type {
+                padding-left: $p_md;
+
+                >div aside {
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+    #contact {
+        >section>form {
+
+            >input,
+            >button {
+                font: 400 0.8rem $text1;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    nav {
+        padding: 0 $p_base;
+
+        >h2 {
+            font-size: 1.6rem;
+            /* Slightly smaller h2 for medium screens */
+
+        }
+
+        
+    }
+    .hamburger-btn {
+        display: none !important;
+        border: none;
+        background-color: transparent;
+    }
+
+    #home {
+        height: 110vh;
+
+        >section {
+            &:first-of-type {
+                padding-left: $p_base;
+
+                >div {
+                    >h1 {
+                        font: 900 3rem $text1;
+                    }
+
+                    aside {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 967px) {
+    nav {
+        padding: 0 $p_sm;
+
+        >h2 {
+            font-size: 1.4rem;
+            /* Decrease h2 size */
+            margin-bottom: 0.5rem;
+            /* Maintain space below h2 */
+        }
+
+        
+
+        >div {
+            gap: 0.5rem;
+            /* Reduce gap between anchor links */
+        }
+
+        >div a {
+            font-size: 0.9rem;
+            /* Decrease size of anchor links */
+            margin: 0;
+            /* Reset margin */
+        }
+
+        /* Adjust Resume button size */
+        >.resume-btn {
+            font-size: 0.9rem;
+            /* Decrease Resume button size */
+            padding: 0.4rem 1.5rem;
+            /* Adjust padding for Resume button */
+        }
+    }
+
+    .hamburger-btn {
+        display: none !important;
+        border: none;
+        background-color: transparent;
+    }
+
+    #home {
+        >section {
+            &:first-of-type {
+                padding-left: $p_sm;
+
+                >div {
+                    >div {
+                        gap: 2rem;
+                        width: 100%;
+                    }
+
+                    aside {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+
+        /* Hide the navigation links and resume button */
+        >div {
+            display: none;
+            /* Hide the div containing the anchor tags */
+        }
+
+        /* Keep the hamburger button visible */
+        
+
+        >h2 {
+            font-size: 1.2rem;
+            /* Further decrease h2 size on very small screens */
+            margin-right: 20px;
+        }
+    }
+    .hamburger-btn {
+        display: inline-block !important;
+        /* Ensure the hamburger button is visible */
+        color: $color3 !important;
+        font-size: 2rem !important;
+        cursor: pointer !important;
+        transition: color 0.3s;
+        border: none !important;
+        margin-left: 70%;
+
+        &:hover {
+            color: $color3 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+
+        /* Adjust margin for resume button */
+        >.resume-btn {
+            margin-top: 0.5rem;
+            /* Add space above the resume button */
+        }
+
+        >h2 {
+            margin-right: 20px;
+        }
+
+        
+    }
+    .hamburger-btn {
+        margin-left: 70%;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+
+
+    #home {
+        height: unset;
+        flex-direction: column-reverse;
+
+        >section {
+            &:first-of-type {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                >div {
+                    border: none;
+                    padding-top: 3rem;
+
+                    >h1 {
+                        font: 900 2.5rem $text1;
+                    }
+
+                    >div {
+                        flex-direction: column;
+                    }
+
+                    aside {
+                        align-items: center;
+                    }
+
+                    article[data-special] {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        span {
+                            display: block;
+                            width: 70%;
+                            word-wrap: break-word;
+                        }
+                    }
+
+                    article {
+                        width: 100%;
+                        text-align: center;
+
+                        &:after {
+                            top: 0;
+                            left: 0%;
+                        }
+                    }
+                }
+            }
+
+            &:last-of-type {
+                border: none;
+            }
+        }
+
+        >.chevron-down {
+            font-size: 1rem;
+            bottom: 12%;
+        }
+    }
+
+    
+
+    #contact {
+        display: flex !important;
+        flex-direction: column !important; /* Stack everything vertically */
+        justify-content: center !important; /* Center the form vertically */
+        align-items: center !important; /* Center the form horizontally */
+        height: 80vh !important; /* Set full height for centering */
+        padding: 0 20px !important; /* Add padding for spacing on smaller screens */
+        
+        > section {
+          width: 100% !important; /* Ensure the section takes the full width */
+          height: 300px !important; /* Let the section adjust its height */
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+    
+          > form {
+            width: 100% !important; /* Form takes full width */
+            max-width: 500px !important; /* Limit the form's width for better appearance */
+            text-align: center !important; /* Center align text inside form */
+            
+            > h2 {
+              text-align: center !important; /* Ensure the heading is centered */
+              width: 100% !important; /* Heading takes the full width */
+              font-size: 1.5rem;
+            }
+            >input{
+                font-size: 2rem;
+            }
+          }
+        }
+    
+        > aside {
+          display: none !important; /* Ensure the image is hidden */
+        }
+      }
+
+}

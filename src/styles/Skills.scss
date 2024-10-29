@@ -1,0 +1,68 @@
+@import "./statics.scss";
+
+#skills {
+    text-align: center;
+    padding: 2rem;
+    background: transparent;
+    margin-top: 20px;
+    > h2 {
+      margin-bottom: 2rem; // Spacing below the heading
+    font-size: 2.5rem; // Font size for prominence
+    color: #333; // Dark color for text
+    border-bottom: 2px solid #666565; // Simple underline effect
+
+    display: inline-block; // Darker color for the heading
+    } // Background of the whole section remains transparent
+  }
+ 
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 2px solid $color5; // Initial border color
+    border-radius: 8px;
+    background: transparent; // Background is transparent
+    color: $color5; // Initial text and icon color
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  
+    .skill-icon {
+      margin-bottom: 0.5rem;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .skill-name {
+      font-family: $text1; // Font family
+      font-size: 1rem;
+      margin: 0;
+      color: inherit; // Inherits color from parent
+    }
+  
+    &:hover {
+      border-color: $color3; // Change border color on hover
+      background-color: $color5; // Change background color on hover
+      color: $color1; // Change text and icon color on hover
+  
+      .skill-icon {
+        transform: scale(1.1); // Slight zoom effect
+      }
+  
+      .skill-name {
+        color: inherit; // Inherits hover color from parent
+      }
+    }
+  }
+  
