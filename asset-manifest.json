@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Responsive_Portfolio_website_React/static/css/main.9ea2e6a6.css",
-    "main.js": "/Responsive_Portfolio_website_React/static/js/main.4c8055b7.js",
+    "main.css": "/Responsive_Portfolio_website_React/static/css/main.5f59f89e.css",
+    "main.js": "/Responsive_Portfolio_website_React/static/js/main.60491378.js",
     "static/media/contact.png": "/Responsive_Portfolio_website_React/static/media/contact.b2710c50142c634121db.png",
-    "static/media/logo-removebg-preview.png": "/Responsive_Portfolio_website_React/static/media/logo-removebg-preview.6e432c5abc05c2b2a044.png",
+    "static/media/Picsart_24-12-04_16-29-58-312-removebg-preview (1).png": "/Responsive_Portfolio_website_React/static/media/Picsart_24-12-04_16-29-58-312-removebg-preview (1).dd4cd6f74e41c325215a.png",
     "index.html": "/Responsive_Portfolio_website_React/index.html",
-    "main.9ea2e6a6.css.map": "/Responsive_Portfolio_website_React/static/css/main.9ea2e6a6.css.map",
-    "main.4c8055b7.js.map": "/Responsive_Portfolio_website_React/static/js/main.4c8055b7.js.map"
+    "main.5f59f89e.css.map": "/Responsive_Portfolio_website_React/static/css/main.5f59f89e.css.map",
+    "main.60491378.js.map": "/Responsive_Portfolio_website_React/static/js/main.60491378.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ea2e6a6.css",
-    "static/js/main.4c8055b7.js"
+    "static/css/main.5f59f89e.css",
+    "static/js/main.60491378.js"
   ]
 }
