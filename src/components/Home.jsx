@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { animate,motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import {BsArrowUpRight, BsChevronDown} from "react-icons/bs";
-import me from "../assets/logo-removebg-preview.png";
+import me from "../assets/Picsart_24-12-04_16-29-58-312-removebg-preview (1).png";
 import { GiDuration } from 'react-icons/gi';
 
 const Home = () => {

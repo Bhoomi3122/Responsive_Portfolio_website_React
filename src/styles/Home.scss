@@ -14,10 +14,10 @@
             >div{
                 border-top: 1px solid $color6_2;
                 height: 100%;
-                padding-top: 6rem;
+                padding-top: 4rem;
                 >h1{
                     margin-top: -20px;
-                    font: 900 3.5rem $text1;
+                    font: 800 3.5rem $text1;
                 }
 
                 .typewriterpara{
@@ -109,7 +109,7 @@
             > img {
                 width: 40vmax;
                 object-fit: contain;
-                height: 40vmax;
+                height: 60vmax !important;
                 // border: 2px solid $color3;
             }
 
