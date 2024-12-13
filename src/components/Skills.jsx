@@ -2,7 +2,7 @@ import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGitAlt, FaCuttlefish } from 'react-icons/fa';
 import { DiNodejs } from 'react-icons/di';
 import { AiOutlineCluster } from 'react-icons/ai';
-import { SiExpress, SiMongodb } from 'react-icons/si'; // Import Express and MongoDB icons
+import { SiExpress, SiMongodb } from 'react-icons/si'; 
 import '../styles/Skills.scss';
 
 const skills = [
@@ -14,15 +14,15 @@ const skills = [
   { name: 'Git', icon: <FaGitAlt size={50} /> },
   { name: 'C++', icon: <FaCuttlefish size={50} /> },
   { name: 'DSA', icon: <AiOutlineCluster size={50} /> },
-  { name: 'Node.js', icon: <DiNodejs size={50} /> }, // Add Node.js
-  { name: 'Express', icon: <SiExpress size={50} /> }, // Add Express
-  { name: 'MongoDB', icon: <SiMongodb size={50} /> }, // Add MongoDB
+  { name: 'Node.js', icon: <DiNodejs size={50} /> },
+  { name: 'Express', icon: <SiExpress size={50} /> }, 
+  { name: 'MongoDB', icon: <SiMongodb size={50} /> }, 
 ];
 
 const Skills = () => {
   return (
     <div id="skills">
-      <h2 className="skills-heading">Skills</h2>
+      <h2 className="skills-heading">SKILLS</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div className="skill-item" key={index}>

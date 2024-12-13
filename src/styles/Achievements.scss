@@ -1,0 +1,108 @@
+.achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .achievements-title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    border-bottom: 2px solid #666565;
+    display: inline-block;
+    padding-bottom: 10px;
+    font: 400 2.7rem Merriweather;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .central-line {
+    margin-top: -3%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 3px;
+    background-color: #292b46; /* Dark Blue */
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    position: relative;
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .horizontal-line {
+    position: absolute;
+    height: 2px;
+    background-color: #292b46;
+    width: 20%; /* Adjust the width to be short */
+    top: 50%;
+  }
+  
+  .timeline-item.left .horizontal-line {
+    left: 50%;
+  }
+  
+  .timeline-item.right .horizontal-line {
+    right: 50%;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+    background-color: #292b46;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  .timeline-item.left .timeline-content {
+    margin-left: 60%;
+    z-index: 3;
+  }
+  
+  .timeline-item.right .timeline-content {
+    margin-right: 60%;
+    z-index: 3;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.7rem !important;
+    color: rgb(254, 242, 218);
+    margin-bottom: 1rem;
+    font: 400 2.7rem Roboto-Condensed;
+  }
+  
+  .timeline-content p {
+    font-size: 1rem;
+    color: rgb(250, 248, 237);
+  }
+  
+  .timeline-content .skills {
+    font-size: 1rem;
+    color: #fe9074 !important;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .timeline-item .timeline-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .timeline-item .timeline-content .skills {
+    color: #1e3a8a; /* Highlight skills with blue color */
+  }
+  

@@ -5,9 +5,11 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Connect from "./components/Connect";
 import Contact from "./components/Contact";
+import Achievements from "./components/Achievements";
 import { Toaster } from "react-hot-toast"; // Make sure to import this
 import { useState } from "react";
 import { HeaderPhone } from "./components/Navbar";
+
 
 function App() {
   const [menuopen,setMenuOpen] = useState(false);
@@ -21,6 +23,8 @@ function App() {
       <Skills />
       <hr />
       <Projects   />
+      <hr />
+      <Achievements/>
       <hr />
       <Connect />
       <hr />

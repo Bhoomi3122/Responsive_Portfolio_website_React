@@ -7,7 +7,6 @@ const Navbar = ({menuopen,setMenuOpen}) => {
     <>
     <nav>
       <NavContent setMenuOpen={setMenuOpen}/>
-      {/* Hamburger button, initially hidden, shown on smaller screens */}
       
     </nav>
     <button className="hamburger-btn" aria-label="Menu" onClick={()=>{setMenuOpen(!menuopen)}}>
@@ -29,15 +28,15 @@ export const HeaderPhone = ({ menuopen,setMenuOpen }) => {
 const NavContent = ({setMenuOpen}) => {
   return (
     <>
-      <h2>Bhoomi</h2>
+      <h2 className='Bhoomi'>Bhoomi</h2>
       <div>
         <a onClick={()=>{setMenuOpen(false)}} href="#home">Home</a>
         <a onClick={()=>{setMenuOpen(false)}} href="#skills">Skills</a>
         <a onClick={()=>{setMenuOpen(false)}} href="#project">Projects</a>
+        <a onClick={()=>{setMenuOpen(false)}} href="#achievements">Achievements</a>
         <a onClick={()=>{setMenuOpen(false)}} href="#connect">Connect</a>
         <a onClick={()=>{setMenuOpen(false)}} href="#contact">Contact</a>
       </div>
-      {/* Resume button */}
       <a href="https://drive.google.com/file/d/1hpiRrCaNMqKK0E39wkgWj-TC8l3TRp0O/view?usp=sharing" target="_blank" rel="noopener noreferrer">
         <button className="resume-btn">Resume</button>
       </a> 

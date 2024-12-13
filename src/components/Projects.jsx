@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Projects = () => {
   return (
     <div id='project'>
-      <h2>Projects</h2>
+      <h2>PROJECTS</h2>
       <section>
         <article>
           <Carousel 
@@ -35,7 +35,6 @@ const Projects = () => {
                     </p>
                     <p className="description">{description}</p>
                     
-                    {/* Key Features Section */}
                 
                     <ul className="key-features">
                       {key_features.map((feature, index) => (

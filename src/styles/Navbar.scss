@@ -12,37 +12,39 @@ nav {
   top: 0;
   z-index: 60;
   margin: 0;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 2.5px solid $color6;
 
-  >h2 {
+  .Bhoomi{
+    margin-left: -15%;
+    margin-right: 15%;
+  }
+  > h2 {
     font-size: 1.8rem;
     font-family: $text2;
     transition: font-size 0.8s;
     margin: 0;
 
     @media screen and (max-width: 967px) {
-      font-size: 1.4rem;
-      /* Reduce brand name size for small screens */
+      font-size: 1.6rem;
     }
 
     @media screen and (max-width: 700px) {
       font-size: 1.4rem;
-      /* Further reduce size for very small screens */
     }
   }
 
-  >div {
+  > div {
     display: flex;
     align-items: center;
     gap: 2rem;
 
     @media screen and (max-width: 967px) {
       gap: 1rem;
-      /* Reduce gap between links on smaller screens */
     }
 
     @media screen and (max-width: 800px) {
       display: none;
-      /* Hide the links on small screens */
     }
 
     a {
@@ -50,6 +52,7 @@ nav {
       font-weight: 500;
       transition: all 0.3s;
       letter-spacing: 1px;
+      margin: 0px 10px 0px 10px;
 
       &:hover {
         color: $color3;
@@ -57,22 +60,20 @@ nav {
 
       @media screen and (max-width: 967px) {
         font-size: 0.9rem;
-        /* Decrease size of links for small screens */
       }
 
       @media screen and (max-width: 700px) {
         font-size: 0.8rem;
-        /* Further decrease size for very small screens */
       }
     }
   }
 
-  >a {
+  > a {
     display: flex;
     align-items: center;
-
-    /* Resume button styles */
-    >.resume-btn {
+    margin-left: 10% !important;
+    margin-right: -15% !important;
+    .resume-btn {
       border: 1px solid $color6_1;
       padding: 0.5rem 2rem;
       background-color: $color1;
@@ -81,6 +82,7 @@ nav {
       letter-spacing: 1px;
       font-weight: 500;
       transition: all 0.3s;
+      
 
       &:hover {
         background-color: $color6;
@@ -89,9 +91,7 @@ nav {
 
       @media screen and (max-width: 967px) {
         font-size: 0.9rem;
-        /* Reduce button size on smaller screens */
         padding: 0.4rem 1.5rem;
-        /* Adjust padding */
       }
 
       @media screen and (max-width: 800px) {
@@ -101,47 +101,40 @@ nav {
   }
 }
 
-/* Dropdown menu for small screens */
 .hamburger-btn {
   display: none;
-  /* Hidden by default */
-  // flex-direction: column;
-  // position: absolute;
-  // top: 80px;
-  // left: 0;
-  // width: 100%;
-  // background-color: $color1;
-  // padding: 1rem;
   z-index: 150;
   position: fixed;
   top: 2rem;
   right: 2rem;
 
-  a {
-    margin: 0.5rem 0;
-    color: $color6;
-    font-size: 1rem;
-    text-align: center;
-
-    &:hover {
-      color: $color3;
-    }
-  }
-
   @media screen and (max-width: 800px) {
     display: flex;
-    /* Show dropdown for small screens */
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+  }
+
+  span {
+    width: 2rem;
+    height: 0.3rem;
+    background-color: $color6;
+    transition: transform 0.3s ease-in-out;
+
+    &:nth-child(2) {
+      width: 1.5rem;
+    }
   }
 }
 
-.navphone{
+.navphone {
   transition: all 0.5s;
-  transform: translateY((-200%));
+  transform: translateY(-200%);
   width: 100%;
   height: 100vh;
   background-color: $color5;
   padding: $p_base;
-  position:fixed;
+  position: fixed;
   top: 0;
   z-index: 100;
   display: flex;
@@ -150,27 +143,30 @@ nav {
   justify-content: center;
   gap: 3rem;
 
-  >h2{
+  > h2 {
     font-size: 2rem;
     color: $color4;
   }
-  >div{
+
+  > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
-  a{
+
+  a {
     color: $color4;
     letter-spacing: 1px;
     font-weight: 500;
     transition: all 0.3s;
 
-    &:hover{
+    &:hover {
       color: $color3;
     }
   }
-  .resume-btn{
+
+  .resume-btn {
     border: 1px solid $color6_1;
     padding: 0.5rem 2rem;
     background-color: $color1;
@@ -179,14 +175,14 @@ nav {
     letter-spacing: 1px;
     font-weight: 700;
     transition: 0.5s;
-    &:hover{
+
+    &:hover {
       background-color: $color3;
       color: $color4;
-    } 
+    }
   }
 }
 
-.navPhoneComes{
+.navPhoneComes {
   transform: translateY(0);
-
 }

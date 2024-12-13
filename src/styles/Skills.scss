@@ -4,13 +4,12 @@
     text-align: center;
     padding: 2rem;
     background: transparent;
-    margin-top: 20px;
     > h2 {
       margin-bottom: 2rem; // Spacing below the heading
     font-size: 2.5rem; // Font size for prominence
     color: #333; // Dark color for text
     border-bottom: 2px solid #666565; // Simple underline effect
-
+    font: 400 2.7rem $text2;
     display: inline-block; // Darker color for the heading
     } // Background of the whole section remains transparent
   }

@@ -1,25 +1,19 @@
 import React, { useRef } from 'react';
-import { animate,motion } from 'framer-motion';
+import { animate, motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import {BsArrowUpRight, BsChevronDown} from "react-icons/bs";
+import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 import me from "../assets/Picsart_24-12-04_16-29-58-312-removebg-preview (1).png";
-import { GiDuration } from 'react-icons/gi';
 
 const Home = () => {
-    const clientCount=useRef(null);
-    const projectsCount=useRef(null);
-    const animationClientsCount=()=>{
-        animate(0,100,{
-            duration:1.5,
-            onUpdate:(v)=>(clientCount.current.textContent=v.toFixed())
+    const problemsCount = useRef(null);
+
+    const animationProblemCount = () => {
+        animate(0, 600, {
+            duration: 1.5,
+            onUpdate: (v) => (problemsCount.current.textContent = v.toFixed())
         });
     }
-    const animationProjectssCount=()=>{
-        animate(0,500,{
-            duration:1.5,
-            onUpdate:(v)=>(projectsCount.current.textContent=v.toFixed())
-        });
-    }
+
     const animations = {
         h1: {
             initial: {
@@ -35,8 +29,8 @@ const Home = () => {
             initial: {
                 y: "-100%",
                 opacity: 0,
-            }, 
-             whileInView: {
+            },
+            whileInView: {
                 y: 0,
                 opacity: 1,
             },
@@ -52,7 +46,15 @@ const Home = () => {
                     </motion.h1>
                     <Typewriter
                         options={{
-                            strings: ["A Mern Stack Developer", "A DSA Enthusiast", "A Creative Thinker", "A Computer Science Student"],
+                            strings: [
+            
+                                "A Computer Science Student",
+                                "A MERN Stack Developer",
+                                "A Problem Solver",
+                                "A Tech Enthusiast",
+                        
+                                "An Innovative Thinker"
+                            ],
                             autoStart: true,
                             loop: true,
                             cursor: "",
@@ -60,28 +62,27 @@ const Home = () => {
                         }}
                     />
                     <div>
-                        <a href="mailto:gargbhoomi01@gmail.com">Get in Touch</a>
-                        <a href="#project">Projects <BsArrowUpRight/></a>
+                        <a href="https://www.linkedin.com/in/bhoomi-garg-244b52219/">Get in Touch</a>
+                        <a href="https://github.com/Bhoomi3122?tab=repositories">Projects <BsArrowUpRight /></a>
                     </div>
-                    
+
                     <aside>
-                    <article>
-                        <p>+
-                             <motion.span whileInView={animationProjectssCount} ref={projectsCount}>500</motion.span>
-                        </p>
-                        <span>DSA Problems Solved</span>
-                    </article>
-                    <article data-special>
-                        <p>Contact
-                        </p>
-                        <span>gargbhoomi01@gmail.com</span>
-                    </article>
+                        <article>
+                            <p>
+                                <motion.span whileInView={animationProblemCount} ref={problemsCount}>600</motion.span>
+                            </p>
+                            <span>DSA Problems Solved</span>
+                        </article>
+                        <article data-special>
+                            <p>Contact</p>
+                            <span>gargbhoomi01@gmail.com</span>
+                        </article>
                     </aside>
-                </div> 
+                </div>
             </section>
             <section>
-                <img src={me} alt="Bhoomi"/>
-                <BsChevronDown className='chevron-down'/>
+                <img src={me} alt="Bhoomi" />
+                <BsChevronDown className='chevron-down' />
             </section>
         </div>
     );

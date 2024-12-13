@@ -4,7 +4,7 @@ import image from "../assets/contact.png";
 import { motion } from "framer-motion";
 import { addDoc, collection } from "firebase/firestore";
 import toast from "react-hot-toast";
-import { db } from "../Firebase"; // Assuming you have Firebase initialized here
+import { db } from "../Firebase"; 
 
 const Contact = () => {
   const [name, Setname] = useState("");
