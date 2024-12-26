@@ -157,16 +157,21 @@
   #project {
     padding: 4rem $p;
     height: 500px !important;
+    margin-top: -4%;
 
     > h2 {
       font-size: 2rem;
       margin-left: 40%;
-      margin-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .carousel .control-dots .dot{
+      display: none;
     }
 
     .workItem {
       flex-direction: column;
-      height: 250px !important;
+      height: 260px !important;
       padding: 0.3rem !important;
 
       > img {
@@ -205,6 +210,7 @@
           margin-top: 0 !important;
           padding: 0.5rem 1.5rem !important; 
           font-size: 0.9rem !important;
+         
         }
       }
     }

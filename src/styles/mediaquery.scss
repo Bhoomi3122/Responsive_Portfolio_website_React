@@ -75,7 +75,7 @@
     }
 }
 
-@media screen and (max-width: 967px) {
+@media screen and (max-width: 970px) {
     nav {
         padding: 0 $p_sm;
 
@@ -125,13 +125,12 @@
                         gap: 2rem;
                         width: 100%;
                     }
-
-                    aside {
-                        flex-direction: column;
-                    }
                 }
             }
         }
+    }
+    #project{
+        margin-top: 0%;
     }
 }
 

@@ -17,7 +17,7 @@
     },
     {
       "title": "University Management System (Web)",
-      "tech_stack": ["React", "LocalStorage", "MongoDB (optional)"],
+      "tech_stack": ["React", "LocalStorage"],
       "status": "Completed",
       "description": "This system simplifies university record management using React and LocalStorage, with an optional MongoDB integration for database support.",
       "key_features_heading": "Key Features",
@@ -61,7 +61,7 @@
       "title": "Daily Goals Tracker",
       "tech_stack": ["React", "Local Storage"],
       "status": "Completed",
-      "description": "A simple and efficient Daily Goals Tracker app that allows users to add, complete, and delete tasks seamlessly. Leveraging Local Storage for persistent data, it ensures that users' tasks are saved across sessions.",
+      "description": "A simple and efficient Daily Goals Tracker app that allows users to add, complete, and delete tasks seamlessly.",
       "key_features_heading": "Key Features",
       "key_features": [
         "Add new tasks to track daily goals easily.",

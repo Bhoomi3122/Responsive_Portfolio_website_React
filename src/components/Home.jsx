@@ -69,7 +69,7 @@ const Home = () => {
                     <aside>
                         <article>
                             <p>
-                                <motion.span whileInView={animationProblemCount} ref={problemsCount}>600</motion.span>
+                                <motion.span whileInView={animationProblemCount} ref={problemsCount}>600</motion.span>+
                             </p>
                             <span>DSA Problems Solved</span>
                         </article>
